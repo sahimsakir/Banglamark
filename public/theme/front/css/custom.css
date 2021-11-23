@@ -1,0 +1,69 @@
+/* Add here all your CSS customizations */
+h1 {
+    line-height: 30px;
+    margin: 0 0 25px 0;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.tabs-navigation .nav-tabs > li .nav-link {
+    padding: 10px !important;
+}
+
+.list li {
+    margin-bottom: 5px !important;
+}
+
+.vapp {
+    max-height: 30px;
+}
+
+.vdiv-logo {
+    margin-top: -16px !important;
+}
+
+.vfooter-services {
+    padding-top: 0px !important;
+}
+
+.vfooter-arrow{
+    top: 3px !important;
+}
+
+.vfooter p {
+    line-height: 13px;
+    color: #DDD !important;
+}
+
+.vfooter2 p {
+    color: #DDD !important;
+}
+
+.social-icons:not(.social-icons-clean):not(.social-icons-dark):not(.social-icons-dark-2) li {
+    background: #0088CC;
+}
+.social-icons li a {
+    color: #FFF !important;
+}
+
+
+.vbg-solution {
+ background-image: url(../img/bg_tiles1.png) !important;
+ background-attachment: fixed !important;
+ background-position: center !important;
+ background-repeat: repeat !important;
+}
+
+.img-thumbnail img {
+    border-radius: 8px;
+}
+
+.btn-light:hover {
+    color: #333;
+}
+
+.btn-light .btn-outline .btn-light {
+    color: #555;
+}

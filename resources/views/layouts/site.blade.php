@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@yield('meta_title')</title>
+    <meta name="keywords" content="@yield('meta_kw')" />
+    <meta name="description" content="@yield('meta_des')">
+    <meta name="author" content="">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177240491-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177240491-4');
+    </script>
+    <!-- Schema Tag -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Banglamark",
+        "alternateName": "Industrial Equipment and Power Solutions Bangladesh",
+        "url": "https://www.banglamark.com/",
+        "logo": "https://www.banglamark.com/theme/front/img/logo_v2.png",
+        "sameAs": [
+            "https://www.facebook.com/BANGLAMARKGROUP/",
+            "https://www.youtube.com/channel/UCOllrXwMeJ1iPb8KrlEzjrQ",
+            "https://www.linkedin.com/in/banglamark-group-6639bb197/"
+        ]
+        }
+    </script>
+
+
+    
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="{{asset('theme/front/img/favicon/apple-icon-57x57.png')}}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{asset('theme/front/img/favicon/apple-icon-60x60.png')}}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{asset('theme/front/img/favicon/apple-icon-72x72.png')}}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{asset('theme/front/img/favicon/apple-icon-76x76.png')}}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{asset('theme/front/img/favicon/apple-icon-114x114.png')}}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{asset('theme/front/img/favicon/apple-icon-120x120.png')}}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{asset('theme/front/img/favicon/apple-icon-144x144.png')}}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{asset('theme/front/img/favicon/apple-icon-152x152.png')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{asset('theme/front/img/favicon/apple-icon-180x180.png')}}">
+<link rel="icon" type="image/png')}}" sizes="192x192"  href="{{asset('theme/front/img/favicon/android-icon-192x192.png')}}">
+<link rel="icon" type="image/png')}}" sizes="32x32" href="{{asset('theme/front/img/favicon/favicon-32x32.png')}}">
+<link rel="icon" type="image/png')}}" sizes="96x96" href="{{asset('theme/front/img/favicon/favicon-96x96.png')}}">
+<link rel="icon" type="image/png')}}" sizes="16x16" href="{{asset('theme/front/img/favicon/favicon-16x16.png')}}">
+<link rel="manifest" href="{{asset('theme/front/img/favicon/manifest.json')}}">
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<meta name="theme-color" content="#ffffff">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+<!-- Web Fonts  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css">
+
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="{{asset('theme/front/vendor/bootstrap/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/fontawesome-free/css/all.min.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/animate/animate.min.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/simple-line-icons/css/simple-line-icons.min.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/owl.carousel/assets/owl.carousel.min.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/magnific-popup/magnific-popup.min.css')}}">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="{{asset('theme/front/css/theme.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/css/theme-elements.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/css/theme-blog.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/css/theme-shop.css')}}">
+
+<!-- Current Page CSS -->
+<link rel="stylesheet" href="{{asset('theme/front/vendor/rs-plugin/css/settings.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/rs-plugin/css/layers.css')}}">
+<link rel="stylesheet" href="{{asset('theme/front/vendor/rs-plugin/css/navigation.css')}}">
+
+<!-- Skin CSS -->
+<link rel="stylesheet" href="{{asset('theme/front/css/skins/default.css')}}">
+<script src="{{asset('theme/front/master/style-switcher/style.switcher.localstorage.js')}}"></script>
+
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href="{{asset('theme/front/css/custom.css')}}">
+
+<!-- Head Libs -->
+<script src="{{asset('theme/front/vendor/modernizr/modernizr.min.js')}}"></script>
+
+<!-- Custom -->
+<meta name="google-site-verification" content="RbHmhdcdkLYk79IysEZrx95lbAw-ZOLXfHn5gqq2hUA" />
+
+    
+</head>
+
+<body>
+
+    <div class="body">
+        
+        <!--nav-->
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 20, 'stickyHeaderContainerHeight': 70}">
+    <div class="header-body">
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <a href="{{url('/')}}">
+                                <img alt="Banglamark" width="100" height="80" data-sticky-width="75" data-sticky-height="60" src="{{asset('theme/front/img/logo_v2.png')}}" style="margin: -10px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+                    <div class="header-row">
+                        <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+                            <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item active" href="{{url('/')}}">Home</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#">About Us</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="{{url('/about-overview')}}">Overview</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/about-vision')}}">Vision and Values</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/about-founders')}}">Founders Message</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/about-achievement')}}">Achievement and Award</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/about-code')}}">Code of Conduct</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown dropdown-mega"> <a class="dropdown-item dropdown-toggle" href="#">Energy & Engineering</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="dropdown-mega-content">
+                                                        <div class="row">
+                                                            @foreach($menus as $index=>$value)
+                                                             @if($index < 4)
+                                                            <div class="col-lg-3"> <span class="dropdown-mega-sub-title">{{$value->name}}</span>
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    @foreach($value->subdivisions as $subdiv)
+                                                                    <li><a class="dropdown-item" href="{{route('sub.division',[$value->slug,$subdiv->slug])}}">{{$subdiv->name}}</a></li>
+                                                                    @endforeach
+                                                                </ul>
+                                                            </div>
+                                                            @endif
+                                                            @endforeach
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="dropdown dropdown-mega"> <a class="dropdown-item dropdown-toggle" href="#">Heavy Industries</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="dropdown-mega-content">
+                                                        <div class="row">
+                                                             @foreach($menus as $index1=>$value1)
+                                                             @if($index1 > 3 && $index1 < 8)
+                                                            <div class="col-lg-3"> <span class="dropdown-mega-sub-title">{{$value1->name}}</span>
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    @foreach($value1->subdivisions as $subdiv)
+                                                                    <li><a class="dropdown-item" href="{{route('sub.division',[$value1->slug,$subdiv->slug])}}">{{$subdiv->name}}</a></li>
+                                                                    @endforeach
+                                                                </ul>
+                                                            </div>
+                                                            @endif
+                                                            @endforeach
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="dropdown dropdown-mega"> <a class="dropdown-item dropdown-toggle" href="#">Complex Business</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="dropdown-mega-content">
+                                                        <div class="row">
+                                                             @foreach($menus as $index2=>$value2)
+                                                             @if($index2 > 7 && $index2 < 12)
+                                                            <div class="col-lg-3"> <span class="dropdown-mega-sub-title">{{$value2->name}}</span>
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    @foreach($value2->subdivisions as $subdiv)
+                                                                    <li><a class="dropdown-item" href="{{route('sub.division',[$value2->slug,$subdiv->slug])}}">{{$subdiv->name}}</a></li>
+                                                                    @endforeach
+                                                                </ul>
+                                                            </div>
+                                                            @endif
+                                                            @endforeach
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="dropdown dropdown-mega"> <a class="dropdown-item dropdown-toggle" href="#">Other Business</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="dropdown-mega-content">
+                                                        <div class="row">
+                                                             @foreach($menus as $index3=>$value3)
+                                                             @if($index3 > 11 && $index3 < 16)
+                                                            <div class="col-lg-3"> <span class="dropdown-mega-sub-title">{{$value3->name}}</span>
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    @foreach($value3->subdivisions as $subdiv)
+                                                                    <li><a class="dropdown-item" href="{{route('sub.division',[$value->slug,$subdiv->slug])}}">{{$subdiv->name}}</a></li>
+                                                                    @endforeach
+                                                                </ul>
+                                                            </div>
+                                                            @endif
+                                                            @endforeach
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        
+                                        
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Service</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="{{url('/service/maintenance')}}">Service & Maintenance</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/spare-parts')}}">Spare Parts</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/rental-service')}}">Rental Service</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/service-center')}}">Service Center</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/wearhouse')}}">Wearhouse</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/training-knowhow')}}">Training & Knowhow</a></li>
+                                                <li><a class="dropdown-item" href="{{url('/technical-expertise')}}">Technical Expertise</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="{{url('/contact')}}">Contact</a>
+                                        </li>
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!--/nav-->
+
+        <div role="main" class="main">
+        @yield('content')
+        </div>
+        <!--footer-->
+        <footer id="footer">
+        <div class="container">
+        <div class="row pt-5 pb-2">
+            <div class="col-md-6 col-lg-3 mb-lg-0 vfooter2">
+                <h5 class="text-4 mb-3">Banglamark</h5>
+                <ul class="list list-icons list-icons-lg">
+                    <li class="mb-1"><i class="fa fa-map-marker text-color-primary"></i>
+                        <p class="m-0">KA-6/A, Navana Sylvania Baridhara, Dhaka, Bangladesh</p>
+                    </li>
+                    <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i>
+                        <p class="m-0"><a href="tel:+8801977646434">(+88) 01977646434</a></p>
+                    </li>
+                    <li class="mb-1"><i class="far fa-envelope text-color-primary"></i>
+                        <p class="m-0"><a href="mailto:sales@banglamark.com.bd">sales@banglamark.com.bd</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fa fa-globe text-color-primary"></i>
+                        <p class="m-0"><a href="https://www.banglamark.com">www.banglamark.com</a></p>
+                    </li>
+                    <li class="mb-1"><i class="far fa-map text-color-primary"></i>
+                        <p class="m-0"><a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2786846986014!2d90.4183852149818!3d23.773088484578142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7ca72b85ab7%3A0xd70c7b0f2e95f67f!2sBANGLAMARK%20GROUP!5e0!3m2!1sen!2sbd!4v1587122908189!5m2!1sen!2sbd">Open Google Map</a></p>
+                    </li>
+                </ul>
+                <p class="pr-1 mb-1"><b>Follow us on Social Media,</b></p>
+                <ul class="social-icons">
+                    <li class="social-icons-facebook"><a href="https://www.facebook.com/BANGLAMARKGROUP/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCOllrXwMeJ1iPb8KrlEzjrQ" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li class="social-icons-instagram"><a href="https://instagram.com/banglamark_group?igshid=ea9hiftvroio" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-icons-linkedin"><a href="https://www.linkedin.com/in/banglamark-group-6639bb197/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                
+                </ul>
+
+            </div>
+            <div class="col-md-6 col-lg-3 mb-lg-0 vfooter">
+                <h5 class="text-4 mb-3">About Banglamark</h5>
+                <ul class="list list-icons list-icons-lg ">
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/about-overview')}}">Overview</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/about-vision')}}">Vision and Values</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/about-founders')}}">Founders Message</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/about-achievement')}}">Achievement and Award</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/about-code')}}">Code of Conduct</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="download.php">Download Brochures</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="news-activities.php">News & Activities</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="career.php">Career</a></p>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-lg-0 vfooter">
+                <h5 class="text-4 mb-3">Business Solution</h5>
+                <ul class="list list-icons list-icons-lg">
+                    @foreach($menus as $foot)
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{route('division',$foot->slug)}}">{{$foot->name}}</a></p>
+                    </li>
+                    @endforeach
+
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-lg-0 vfooter">
+                <h5 class="text-4 mb-3">Service Solution</h5>
+                <ul class="list list-icons list-icons-lg ">
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/service/maintenance')}}">Service & Maintenance</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/spare-parts')}}">Spare Parts</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/rental-service')}}">Rental Service</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/service-center')}}">Service Center</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/wearhouse')}}">Wearhouse</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/training-knowhow')}}">Training & Knowhow</a></p>
+                    </li>
+                    <li class="mb-1"><i class="fas fa-caret-right text-color-primary vfooter-arrow"></i>
+                        <p class="m-0 pt-0"><a href="{{url('/technical-expertise')}}">Technical Expertise</a></p>
+                    </li>
+                </ul>
+                
+                <h5 class="text-4 mb-3">Certified & Compliance By</h5>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-6 pl-1 pr-1">
+                        <img class="img-fluid" src="{{asset('theme/front/img/logos/bv.png')}}" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-6 pl-1 pr-1">
+                        <img class="img-fluid" src="{{asset('theme/front/img/logos/trac.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright © 2011-<?php echo date("Y"); ?>. All right reserved by: <a href="https://www.banglamark.com">BANGLAMARK</a>. Design & Developed by <a href="https://www.virtualdesignbd.com" target="_blank">Virtual Design</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!--/footer-->
+    
+    </div>
+     <!-- Vendor -->
+        <script src="{{asset('theme/front/vendor/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.appear/jquery.appear.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.cookie/jquery.cookie.min.js')}}"></script>
+        <script src="{{asset('theme/front/master/style-switcher/style.switcher.js')}}" id="styleSwitcherScript" data-base-path="" data-skin-src=""></script>
+        <script src="{{asset('theme/front/vendor/popper/umd/popper.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/common/common.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.validation/jquery.validate.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.gmap/jquery.gmap.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/jquery.lazyload/jquery.lazyload.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/isotope/jquery.isotope.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/vide/jquery.vide.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/vivus/vivus.min.js')}}"></script>
+        <script src="{{asset('theme/front/js/examples/examples.lightboxes.js')}}"></script>
+        
+        <!-- Theme Base, Components and Settings -->
+        <script src="{{asset('theme/front/js/theme.js')}}"></script>
+        
+        <!-- Current Page Vendor and Views -->
+        <script src="{{asset('theme/front/vendor/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script>
+        <script src="{{asset('theme/front/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
+        
+        <!-- Theme Custom -->
+        <script src="{{asset('theme/front/js/custom.js')}}"></script>
+        
+        <!-- Theme Initialization Files -->
+        <script src="{{asset('theme/front/js/theme.init.js')}}"></script>
+        
+        
+        <script>
+            $(document).ready(function() {
+            	$('#smallModal').modal('show');
+            });
+        </script>
+        
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '690571401611368');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=690571401611368&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>

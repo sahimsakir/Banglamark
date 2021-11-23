@@ -1,0 +1,13 @@
+/* Add here all your CSS customizations */
+
+.body-sign { 
+max-width: 680px;
+}
+
+html .wizard-progress .wizard-steps li a, html.dark .wizard-progress .wizard-steps li a {
+    padding: 25px 5px 0;
+}
+
+.form-control:not(.form-control-sm):not(.form-control-lg) {
+    line-height: 21px !important;
+}

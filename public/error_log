@@ -1,0 +1,6 @@
+[14-Aug-2021 15:02:15 UTC] PHP Fatal error:  Cannot declare class App\Models\SubService, because the name is already in use in /home/bangla/banglapro/app/Models/Page.php on line 8
+[05-Oct-2021 17:30:53 UTC] PHP Fatal error:  Cannot declare class App\Models\Service, because the name is already in use in /home/bangla/banglapro/app/Models/SubService.php on line 8
+[14-Oct-2021 07:01:03 UTC] PHP Fatal error:  Cannot declare class App\Models\Slider, because the name is already in use in /home/bangla/banglapro/app/Models/Video.php on line 8
+[10-Nov-2021 04:27:29 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 5.5.38. in /home/bangla/banglapro/vendor/composer/platform_check.php on line 25
+[10-Nov-2021 04:27:32 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 5.5.38. in /home/bangla/banglapro/vendor/composer/platform_check.php on line 25
+[10-Nov-2021 04:28:25 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 5.5.38. in /home/bangla/banglapro/vendor/composer/platform_check.php on line 25
